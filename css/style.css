@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /*colors*/
+    --white: #F4F6F0;
+    --muted: #B2BDB3;
+    --lime: #C3F85C;
+    --bg: #101112;
+    --line: #343B36;
+    --purple: #BCABFF;
+
+}
+
 body {
 
     font-family: inter;
+    width: auto;
 
 }
 
@@ -15,6 +32,8 @@ body {
     
 }
 
+
+
 .navbar a {
 
     text-decoration: none;
@@ -22,6 +41,14 @@ body {
     color: #0A1222;
     
 
+}
+
+#navbar__active {
+
+    color: blue;
+    border-bottom: 2px solid;
+    padding: 3px;
+    
 }
 
 #logo {
@@ -53,3 +80,147 @@ body {
 
 }
 
+.info {
+
+    margin: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+
+}
+
+.info__form {
+
+    font-size: 14px;
+
+}
+
+.info intro p {
+
+    color: #034BFF;
+    margin-bottom: 12px;
+
+}
+
+.info intro {
+
+    margin-bottom: 28px;
+    font-size: 10px;
+    width: 100%;
+    font-weight: black;
+    margin-top: 0px;
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+    width: 100%;
+    
+
+}
+
+form input {
+
+    border: 1px solid #E2E1E5;
+    margin-bottom: 20px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form button {
+
+    width: 520px;
+    padding: 15px 15px 15px 0px;
+    border: 0px;
+    background-color: #5E5BFF;
+    border-radius: 8px;
+    color: var(--white);
+    justify-content: left;
+    cursor: pointer;
+
+
+}
+
+
+/*-----footer-----*/
+
+.footer {
+
+    background-color: var(--bg);
+    padding: 40px 56px 28px;
+    color: var(--white);
+
+}
+
+/*-----footer__mark-----*/
+
+.footer__mark {
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer__mark  p{
+
+    color: var(--muted);
+    width: 350px;
+
+}
+
+.footer__mark div {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__mark ul  {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+}
+
+.footer__mark li {
+
+    color: var(--white);
+    list-style: none;
+    
+}
+
+.footer__mark a {
+
+    text-decoration: none;
+    color: var(--white);
+    
+}
+
+
+
+/*-----footer__hr-----*/
+
+.footer__hr {
+
+    margin: 28px 0px;
+
+}
+
+/*-----footer__mention-----*/
+
+.footer__mention {
+
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 14.5px;
+
+}

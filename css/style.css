@@ -1,21 +1,55 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+body {
 
-    box-sizing: border-box;
+    font-family: inter;
+
 }
 
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     
-    body {
-    background-color: #9a5656;
-    font-family: Inter, sans-serif;
-    margin: 0;
-    padding: 20px;
-    border: 2px solid #000;
 }
 
-nav {
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+.navbar a {
+
+    text-decoration: none;
+    font-size: 9px;
+    color: #0A1222;
+    
+
 }
+
+#logo {
+
+    font-size: 21px;
+    font-weight: bold;
+
+}
+
+#search {
+
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#signup {
+
+    background-color: #034BFF;
+    display: flex;
+    align-items: center;
+    border-radius: 900px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+

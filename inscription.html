@@ -10,23 +10,23 @@
     <navbar class="navbar">
             <logo class="navbar__logo">[YouCode]</logo>
             <links class="navbar__links">
-                <a href="#">Accueil</a>
-                <a href="#" id="navbar__active">Campus</a>
-                <a href="#">Clubs & activités</a>
-                <a href="#">Evénements</a>
-                <a href="#">Conseils aux nouveaux</a>
-                <a href="#">Contact</a>
+                <a href="#" class="navbar__link">Accueil</a>
+                <a href="#" class="navbar__link navbar__link--active">Campus</a>
+                <a href="#" class="navbar__link">Clubs & activités</a>
+                <a href="#" class="navbar__link">Evénements</a>
+                <a href="#" class="navbar__link">Conseils aux nouveaux</a>
+                <a href="#" class="navbar__link">Contact</a>
             </links>
             <search class="navbar__search">⌕</search>
             <login class="navbar__login">Rejoindre l'aventure</login>
     </navbar>
-    <main class="main">
-        <intro class="main__intro">
+    <main class="registration">
+        <intro class="registration__intro">
             <p>TES PREMIERS PAS À YOUCODE</p>
             <h1>Ton aventure commence par une rencontre</h1>
         </intro>
-        <form class="main__form">
-            <div class="main__form__inputs">
+        <form>
+            <div class="registration__inputs">
                 <label>Nom
                     <input type="text" name="nom" placeholder="label">
                 </label>
@@ -40,7 +40,7 @@
                     <input type="tel" name="telephone" placeholder="label">
                 </label>
             </div>
-            <div class="main__form__radio">
+            <div class="registration__campus-options">
                 <label>
                     <input type="radio" name="campus" value="Safi">
                     Safi
@@ -54,34 +54,34 @@
                     Nador
                 </label>
             </div>
-            <div class="main__form__submit">
+            <div class="registration__submit">
                 <button type="submit">S'inscrire</button>
             </div>
         </form>
     </main>
     <footer class="footer">
         <div>
-            <div class="footer__mark">
+            <div class="footer__columns">
                 <div>
                     <h1>[YouCode]</h1>
                     <p>Campus Life — des espaces, des projets et une communauté pour grandir ensemble.</p>
                 </div>
                 <div>
-                    <div class="footer__mark__vert">EXPLORER</div>
+                    <div class="footer__heading">EXPLORER</div>
                     <a href="#">Accueil</a>
                     <a href="#">Campus</a>
                     <a href="#">Clubs & activités</a>
                 </div>
                 <div>
-                    <div class="footer__mark__vert">SE RETROUVER</div>
+                    <div class="footer__heading">SE RETROUVER</div>
                     <a href="#">Evénements</a>
                     <a href="#">Conseils aux nouveaux</a>
                     <a href="#">Contact</a>
                 </div>
             </div>
         </div>
-        <hr class="footer__hr">
-        <div class="footer__mention">
+        <hr class="footer__divider">
+        <div class="footer__bottom">
             <p>Projet pédagogique fictif</p>
             <p>Campus Life — YouCode</p>
         </div>

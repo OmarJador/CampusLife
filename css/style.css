@@ -19,7 +19,7 @@
 
 }
 
-/*navbar*/
+/* navbar global */
 
 .navbar {
 
@@ -47,7 +47,7 @@
 
 }
 
-.navbar a {
+.navbar__link {
 
     text-decoration: none;
     color: #0A1222;
@@ -71,21 +71,21 @@
 
 }
 
-#navbar__active {
+.navbar__link--active {
 
     color: var(--blue);
     border-bottom: 3px solid var(--blue);
 
 }
 
-/*main*/
+/* login page */
 
-.main{
+.registration{
 
     padding: 50px;
 }
 
-.main__intro {
+.registration__intro {
 
     display: flex;
     flex-direction: column;
@@ -93,19 +93,19 @@
 
 }
 
-.main__intro p {
+.registration__intro p {
 
     color: var(--blue);
 
 }
 
-.main__intro h1 {
+.registration__intro h1 {
 
     margin-bottom: 30px;
 
 }
 
-.main__form__inputs {
+.registration__inputs {
 
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@
 
 }
 
-.main__form__inputs label {
+.registration__inputs label {
 
     display: flex;
     flex-direction: column;
@@ -122,7 +122,7 @@
 
 }
 
-.main__form__inputs input {
+.registration__inputs input {
 
     width: 50%;
     padding: 20px;
@@ -131,7 +131,7 @@
 
 }
 
-.main__form__radio {
+.registration__campus-options {
 
     margin-top: 15px;
     display: flex;
@@ -140,7 +140,7 @@
 
 }
 
-.main__form__radio label {
+.registration__campus-options label {
 
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@
 
 }
 
-.main__form__radio input {
+.registration__campus-options input {
 
     appearance: none;
     border: 1px solid #E2E1E5;
@@ -159,7 +159,7 @@
 
 }
 
-.main__form__radio input:checked {
+.registration__campus-options input:checked {
 
     background-color: var(--blue);
     box-shadow: inset 0 0 0 3px white;
@@ -167,13 +167,13 @@
 
 }
 
-.main__form__submit {
+.registration__submit {
 
     width: 70%;
 
 }
 
-.main__form__submit button {
+.registration__submit button {
 
     width: 50%;
     padding: 20px;
@@ -190,7 +190,7 @@
 }
 
 
-/*footer*/
+/* footer global */
 
 .footer {
 
@@ -200,21 +200,21 @@
 
 }
 
-.footer__mark {
+.footer__columns {
 
     display: flex;
     justify-content: space-between;
     
 }
 
-.footer__mark  p{
+.footer__columns p{
 
     color: var(--muted);
     width: 350px;
 
 }
 
-.footer__mark div {
+.footer__columns > div {
 
     display: flex;
     flex-direction: column;
@@ -222,26 +222,26 @@
 
 }
 
-.footer__mark a {
+.footer__columns a {
 
     text-decoration: none;
     color: var(--white);
     
 }
 
-.footer__mark__vert {
+.footer__heading {
 
     color: var(--lime);
 
 }
 
-.footer__hr {
+.footer__divider {
 
     margin: 28px 0px;
 
 }
 
-.footer__mention {
+.footer__bottom {
 
     display: flex;
     justify-content: space-between;

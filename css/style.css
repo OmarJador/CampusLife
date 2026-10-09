@@ -16,6 +16,8 @@
     --line: #343B36;
     --purple: #BCABFF;
     --blue: #5E5BFF;
+    --faintline: #E2E1E5;
+    --text: #47526A;
 
 }
 
@@ -162,7 +164,7 @@
 .registration__campus-options input:checked {
 
     background-color: var(--blue);
-    box-shadow: inset 0 0 0 3px white;
+    box-shadow: inset 0 0 0 2px white;
     
 
 }
@@ -189,6 +191,78 @@
 
 }
 
+/* campus page */
+
+.campus {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.campus__section1 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 56px;
+    align-items: start;
+    
+
+}
+
+.campus__section1--intro {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.campus__section1--intro p {
+
+    color: var(--blue);
+    font-size: 12px;
+
+}
+
+.campus__section1--intro h1 {
+
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+
+.campus__section1--ville {
+
+    display: flex;
+    gap: 50px;
+
+}
+
+.campus__section1--ville > div {
+
+    border: 1px solid var(--faintline);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 20px 30px;
+    color: var(--text);
+    
+}
+
+.campus__section1--ville h1 {
+
+    color: var(--blue);
+    font-size: 10px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.campus__section2 {
+
+    padding: 56px;
+
+}
 
 /* footer global */
 

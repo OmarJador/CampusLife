@@ -3,66 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>Inscription</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-            <a href="#" id="logo">[YouCode]</a>
-            <a href="#">Accueil</a>
-            <a href="#" id="navbar__active">Campus</a>
-            <a href="#">Clubs & Activités</a>
-            <a href="#">Evénements</a>
-            <a href="#">Conseils aux nouveaux</a>
-            <a href="#">Contact</a>
-            <a href="#" id="search">⌕</a>
-            <a href="#" id="signup">Rejoindre l'aventure</a>
-    </nav>
-    <info class="info">
-        <intro>
+    <navbar class="navbar">
+            <logo class="navbar__logo">[YouCode]</logo>
+            <links class="navbar__links">
+                <a href="#">Accueil</a>
+                <a href="#" id="navbar__active">Campus</a>
+                <a href="#">Clubs & activités</a>
+                <a href="#">Evénements</a>
+                <a href="#">Conseils aux nouveaux</a>
+                <a href="#">Contact</a>
+            </links>
+            <search class="navbar__search">⌕</search>
+            <login class="navbar__login">Rejoindre l'aventure</login>
+    </navbar>
+    <main class="main">
+        <intro class="main__intro">
             <p>TES PREMIERS PAS À YOUCODE</p>
             <h1>Ton aventure commence par une rencontre</h1>
         </intro>
-        <form>
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name" placeholder="label" required>
-            <label for="prenom">Prenom</label>
-            <input type="text" id="name" name="name" placeholder="label" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="label" required>
-            <label for="phone">Téléphone</label>
-            <input type="tel" id="phone" name="phone" placeholder="label" required>
-            
-            <input type="radio" id="ville" name="ville" required>
-            <input type="radio" id="ville" name="ville" required>
-            <input type="radio" id="ville" name="ville" required>
-            <button type="submit">S'inscrire</button>
+        <form class="main__form">
+            <div class="main__form__inputs">
+                <label>Nom
+                    <input type="text" name="nom" placeholder="label">
+                </label>
+                <label>Prenom
+                    <input type="text" name="prenom" placeholder="label">
+                </label>
+                <label>Email
+                    <input type="email" name="email" placeholder="label">
+                </label>
+                <label>Telephone
+                    <input type="tel" name="telephone" placeholder="label">
+                </label>
+            </div>
+            <div class="main__form__radio">
+                <label>
+                    <input type="radio" name="campus" value="Safi">
+                    Safi
+                </label>
+                <label>
+                    <input type="radio" name="campus" value="Youssoufia">
+                    Youssoufia
+                </label>
+                <label>
+                    <input type="radio" name="campus" value="Nador">
+                    Nador
+                </label>
+            </div>
+            <div class="main__form__submit">
+                <button type="submit">S'inscrire</button>
+            </div>
         </form>
-    </info>
+    </main>
     <footer class="footer">
         <div>
             <div class="footer__mark">
                 <div>
-                    <ul>
-                        <li><h1>[YouCode]</h1></li>
-                        <li><p>Campus Life — des espaces, des projets et une communauté pour grandir ensemble.</p></li>
-                    </ul>
+                    <h1>[YouCode]</h1>
+                    <p>Campus Life — des espaces, des projets et une communauté pour grandir ensemble.</p>
                 </div>
                 <div>
-                    <ul>
-                        <li><a>EXPLORER</a></li>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Campus</a></li>
-                        <li><a href="#">Clubs & activités</a></li>
-                    </ul>
+                    <div class="footer__mark__vert">EXPLORER</div>
+                    <a href="#">Accueil</a>
+                    <a href="#">Campus</a>
+                    <a href="#">Clubs & activités</a>
                 </div>
                 <div>
-                    <ul>
-                        <li><a>SE RETROUVER</a></li>
-                        <li><a href="#">Evénements</a></li>
-                        <li><a href="#">Conseils aux nouveaux</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    <div class="footer__mark__vert">SE RETROUVER</div>
+                    <a href="#">Evénements</a>
+                    <a href="#">Conseils aux nouveaux</a>
+                    <a href="#">Contact</a>
                 </div>
             </div>
         </div>
